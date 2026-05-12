@@ -1,0 +1,77 @@
+import { Cite, Callout, PullQuote, Quiz } from '@/components/mdx-exports';
+
+## Elections and Parties — The Informal Constitution
+
+The Constitution says almost nothing about political parties (Washington warned against them in his Farewell Address) and almost nothing about how electors should be chosen. **The two-party system is a structural consequence of single-member plurality districts — Duverger's Law.**
+
+The **Electoral College** is a federalist artifact: presidential elections are 51 separate state contests (50 states plus DC), nearly all winner-take-all (Maine and Nebraska excepted). This produces the recurring popular-vote-vs-electoral-vote divergence (2000, 2016).
+
+### What the empirical literature finds on Electoral College bias
+
+Peer-reviewed political science generally agrees the Electoral College is **disproportional and creates unequal voter influence**, but findings differ on which constituencies and parties consistently benefit.
+
+<Cite id="hooghe-2023" />, analyzing all elections from 1876–2020, find that the system systematically gives a *major bonus* to the winning candidate but shows **no stable partisan tilt** toward either major party when viewed over the long run.
+
+More recent simulation work suggests a modest contemporary tilt toward Republicans. <Cite id="erikson-2020" />, using state voting from 1992–2018, find that with an even national popular vote, Democrats' modeled chances to win the Electoral College are well below 50% in 2012, 2016, and 2020. <Cite id="virgin-2017" /> finds a small pro-Republican bias due to malapportionment, sufficient — given close national votes — to make further popular-vote / Electoral-College splits likely.
+
+The clearest and most consistent bias is **toward voters in large, closely contested swing states**. <Cite id="warf-2009" /> shows that voters in large competitive states have several-fold greater "power" per voter than those in small or safe states.
+
+### Campaign finance
+
+*Buckley v. Valeo* (1976) established money-as-speech; *Citizens United* (2010) extended this to corporate independent expenditures; *McCutcheon* (2014) struck down aggregate limits. The regulatory regime is largely shaped by these decisions and the FEC's structural deadlock.
+
+Empirical work on *Citizens United*'s effects reveals a more complex picture than the standard narrative. <Cite id="cox-2021" /> finds that Super PACs substantially increased total spending in 2010–2016 congressional elections but had **no significant effect on vote outcomes** — they had only modest effects on candidate entry and platforms.
+
+### Policy consequences are clearer than electoral ones
+
+<Cite id="gilens-2021" />, using a generalized synthetic control design, find that states forced to lift bans on independent corporate expenditures via *Citizens United* adopted more **corporate-friendly policies**: roughly a 4–8% reduction in top corporate income tax rates and less plaintiff-friendly civil litigation rules, with no shifts on non-corporate issues like abortion or guns.
+
+### Dark money
+
+<Cite id="oklobdzija-2019" /> documents that political spending by nondisclosing 501(c)(4) nonprofits **exploded as a major funding source after *Citizens United***, and that donors use disclosure-free channels specifically to avoid social pressures.
+
+<Cite id="werner-2017" /> finds event-study evidence that firms' covert donations to a Republican nonprofit produced **positive stock-market reactions**, particularly in regulated industries — investors expect valuable returns from dark-money political activity.
+
+<Callout>
+  Survey experiments show that large outside expenditures and non-disclosure increase perceptions of corruption and reduce faith in democracy. Knowledge of campaign finance regulation lowers perceived corruption by about 7–8 percentage points without much effect on generalized trust in politicians.
+</Callout>
+
+<Quiz
+  id="elections"
+  title="Quick Check — Elections & Parties"
+  questions={[
+    {
+      question: "What does Duverger's Law explain about U.S. politics?",
+      options: [
+        "Why the President is elected by the Electoral College",
+        "Why single-member plurality electoral districts tend to produce two-party systems",
+        "Why the Senate is anti-majoritarian",
+        "Why turnout in U.S. elections is comparatively low"
+      ],
+      correctIndex: 1,
+      explanation: "Duverger's Law observes that single-member plurality (first-past-the-post) electoral districts structurally tend to produce two-party competition. Third parties get squeezed out because voters anticipate strategic dynamics. The U.S. two-party system isn't constitutionally required — it's an effect of the electoral system design."
+    },
+    {
+      question: "What does the empirical literature say about Electoral College bias?",
+      options: [
+        "It has consistently favored Democrats throughout U.S. history",
+        "It has consistently favored Republicans throughout U.S. history",
+        "Long-run, it gives a 'major bonus' to the winner but shows no stable partisan tilt (Hooghe et al.); recent work shows a modest contemporary pro-Republican tilt; the most consistent bias is toward voters in large swing states",
+        "It's perfectly neutral"
+      ],
+      correctIndex: 2,
+      explanation: "Hooghe et al. (2023) find no stable long-run partisan tilt across 1876–2020, but a strong bonus for the winner. Erikson et al. (2020) and Virgin (2017) find a modest contemporary Republican tilt due to current geographic distribution. The most consistent bias across all eras is toward voters in large, competitive states — they have several-fold greater per-voter influence than those in small or safe states."
+    },
+    {
+      question: "What did Gilens, Patterson & Haines (2021) find about Citizens United's policy effects?",
+      options: [
+        "No effect on state policy",
+        "States that had bans lifted by Citizens United adopted more corporate-friendly policies: ~4–8% reductions in top corporate tax rates and less plaintiff-friendly civil litigation rules — with no shift on non-corporate issues like abortion or guns",
+        "Reduced corporate taxes by 50%",
+        "Increased turnout in affected states"
+      ],
+      correctIndex: 1,
+      explanation: "Gilens et al. used a generalized synthetic control design — a strong identification strategy. They found targeted, issue-specific effects: corporate income tax rates fell roughly 4–8% in treated states, and civil litigation rules became less plaintiff-friendly, with no spillover to unrelated culture-war issues. The policy effects are clearer than the electoral effects Cox (2021) finds."
+    },
+  ]}
+/>

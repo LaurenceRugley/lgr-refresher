@@ -1,0 +1,67 @@
+import { Callout, Quiz } from '@/components/mdx-exports';
+
+## Checks and Balances — The Machine
+
+The bidirectional power flows that make the system work.
+
+### Congress over Executive
+
+- **Impeachment** of the President or other officers
+- **Override of veto** with a two-thirds vote in both chambers
+- **Power of the purse** — no funds without appropriation
+- **Senate confirmation** of appointments and ratification of treaties
+- **Oversight** via committees and subpoena
+- **Control of executive branch structure by statute** — Congress creates and can abolish agencies
+
+### Executive over Congress
+
+- **Veto** — including the threat of veto as a negotiating tool
+- **Agenda-setting** — through the State of the Union and policy proposals
+- **Refusal to enforce** (controversial — see Take Care Clause debates)
+- **Negotiation of executive agreements** that bypass treaty ratification
+
+### Judicial over both
+
+- **Judicial review** of legislation and executive action
+- **Statutory interpretation** (now without *Chevron* deference, see admin-law section)
+
+### Political over Judicial
+
+- **Senate confirmation** of judicial appointments
+- **Impeachment** of judges (rarely successful but constitutionally available)
+- **Constitutional amendment** as the ultimate corrective
+- **Jurisdiction-stripping** by Congress — Article III §2 gives Congress significant control over appellate jurisdiction (rarely used but real)
+- The **long-run effect of the appointment power** — every Supreme Court justice was put there by elected branches
+
+<Callout>
+  The point of Madison's design isn't that any one branch is supreme — it's that ambition counterbalances ambition. Each branch has both the means and the incentive to resist encroachment by the others. The system is intentionally inefficient, and that's not a bug.
+</Callout>
+
+<Quiz
+  id="checks-balances"
+  title="Quick Check — Checks & Balances"
+  questions={[
+    {
+      question: "Which of these is NOT a constitutional power of Congress over the executive?",
+      options: [
+        "Override a veto with two-thirds vote",
+        "Impeach and remove the President",
+        "Directly fire cabinet secretaries",
+        "Refuse to confirm presidential appointments"
+      ],
+      correctIndex: 2,
+      explanation: "Congress can refuse to confirm appointments and can impeach/remove officers, but it cannot directly fire executive officials. Removal authority belongs to the President — limited by statute in some cases (independent agencies) but expanded recently by the unitary-executive line of cases (e.g., Seila Law and Collins)."
+    },
+    {
+      question: "What does 'jurisdiction-stripping' mean as a check on the courts?",
+      options: [
+        "The President can disregard rulings he disagrees with",
+        "Article III §2 gives Congress significant control over what federal courts can hear on appeal — a rarely used but real tool",
+        "States can ignore Supreme Court rulings",
+        "Lower courts can override the Supreme Court"
+      ],
+      correctIndex: 1,
+      explanation: "Article III, §2 says the Supreme Court has appellate jurisdiction 'with such Exceptions, and under such Regulations as the Congress shall make.' Congress has used this rarely (Ex Parte McCardle, 1869 is the classic case) but the power exists. It's a recurring topic when Congress threatens to strip federal courts of jurisdiction over abortion, immigration, or specific statutes."
+    },
+  ]}
+/>

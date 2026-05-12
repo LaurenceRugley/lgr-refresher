@@ -1,0 +1,60 @@
+import { Callout, PullQuote, Quiz } from '@/components/mdx-exports';
+
+<p className="sans text-sm uppercase tracking-widest text-gold mb-2">Part II</p>
+
+# American Government
+
+The U.S. constitutional order is built on three Madisonian commitments: **separation of powers** (Montesquieu via Locke), **checks and balances**, and **federalism**. *Federalist* 10 and 51 are the canonical statements — Madison's argument that an extended republic controls faction not by suppressing it but by multiplying and pitting factions against each other.
+
+## Article I — The Legislative Branch
+
+Bicameral by the **Connecticut Compromise** (1787).
+
+- **House:** 435 members, apportioned by population, 2-year terms, initiates revenue bills (Origination Clause).
+- **Senate:** 100 members, two per state (the great anti-majoritarian feature), 6-year staggered terms; advice and consent on treaties (2/3) and confirmations (majority); sole power of impeachment trial.
+
+### Enumerated powers and the elastic clause
+
+Enumerated powers in Article I, Section 8: commerce, taxation, spending, declare war, raise armies, regulate currency, post offices, naturalization, intellectual property, etc.
+
+The **Necessary and Proper Clause** — the *"elastic clause"* — is the constitutional hook for most of the expansion of federal authority since *McCulloch v. Maryland* (1819).
+
+### Mechanics worth remembering
+
+- Bills die in committee far more often than on the floor.
+- The Senate **filibuster** (requiring 60 votes for cloture on most legislation) is a **rule, not a constitutional requirement**.
+- **Reconciliation** is the workaround for budget-impact bills.
+- The Speaker of the House controls the floor agenda; the Senate Majority Leader controls calendar but with less unilateral power than the Speaker.
+
+<Callout>
+  Most bills die at step 2. The textbook bill-to-law diagram is real, but it understates how much of the work — and how much of the *killing* — happens in committee, in markup, and in the parliamentarian's office, long before any roll-call vote.
+</Callout>
+
+<Quiz
+  id="article-1"
+  title="Quick Check — Article I"
+  questions={[
+    {
+      question: "Why is the Senate described as an 'anti-majoritarian' feature of the U.S. design?",
+      options: [
+        "Senators are appointed by the President",
+        "Each state gets two senators regardless of population, decoupling Senate representation from popular majorities",
+        "The Senate cannot pass legislation",
+        "Senators serve life terms"
+      ],
+      correctIndex: 1,
+      explanation: "The Connecticut Compromise gave every state two senators regardless of population. This means a coalition of small-state senators representing a minority of the national population can block legislation favored by representatives of a substantial popular majority. That's the structural anti-majoritarianism."
+    },
+    {
+      question: "Is the Senate filibuster part of the Constitution?",
+      options: [
+        "Yes — Article I requires 60-vote cloture",
+        "No — it's a Senate rule that can be changed by simple majority vote",
+        "It's a Supreme Court doctrine from the 19th century",
+        "It applies only to confirmations, not legislation"
+      ],
+      correctIndex: 1,
+      explanation: "The 60-vote cloture threshold is a Senate rule, not a constitutional requirement. The Senate has changed cloture procedure several times (most recently in 2013 and 2017 for confirmations) by simple-majority precedent — the so-called 'nuclear option.' This is why the question of whether to abolish the legislative filibuster is a recurring live debate."
+    },
+  ]}
+/>

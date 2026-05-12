@@ -1,6 +1,15 @@
+import { useEffect } from 'react';
 import { MDXProvider } from '@mdx-js/react';
 import { mdxComponents } from '@/components/mdxComponents';
+import { useProgress } from '@/hooks/useProgress';
 import Preface from '@/content/preface.mdx';
+import Article1 from '@/content/part-two-article-1.mdx';
+import Article2 from '@/content/part-two-article-2.mdx';
+import Article3 from '@/content/part-two-article-3.mdx';
+import AdminLaw from '@/content/part-two-admin-law.mdx';
+import ChecksBalances from '@/content/part-two-checks-balances.mdx';
+import Federalism from '@/content/part-two-federalism.mdx';
+import Elections from '@/content/part-two-elections.mdx';
 
 export function PrefacePage() {
   return (
@@ -15,17 +24,30 @@ export function PrefacePage() {
 }
 
 export function PartTwo() {
+  const { markSectionRead } = useProgress();
+  useEffect(() => {
+    markSectionRead('part-two', 0);
+  }, [markSectionRead]);
+
   return (
-    <main className="max-w-prose mx-auto px-6 py-16">
-      <p className="sans text-sm uppercase tracking-widest text-gold mb-2">Part II</p>
-      <h1 className="serif text-display-xl text-ink mb-6">American Government</h1>
-      <div className="callout">
-        <p className="!mb-0">
-          <strong className="not-italic">Coming soon.</strong> Articles I, II, III; checks
-          and balances; federalism; elections; and the 2024 administrative-law
-          revolution. Content will be migrated from the V2 .docx.
-        </p>
-      </div>
+    <main className="max-w-prose mx-auto px-6 py-12">
+      <MDXProvider components={mdxComponents}>
+        <article className="prose-lgr">
+          <Article1 />
+          <hr className="my-12 border-0 h-px bg-gold-light/60" />
+          <Article2 />
+          <hr className="my-12 border-0 h-px bg-gold-light/60" />
+          <Article3 />
+          <hr className="my-12 border-0 h-px bg-gold-light/60" />
+          <AdminLaw />
+          <hr className="my-12 border-0 h-px bg-gold-light/60" />
+          <ChecksBalances />
+          <hr className="my-12 border-0 h-px bg-gold-light/60" />
+          <Federalism />
+          <hr className="my-12 border-0 h-px bg-gold-light/60" />
+          <Elections />
+        </article>
+      </MDXProvider>
     </main>
   );
 }

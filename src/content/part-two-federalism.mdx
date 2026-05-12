@@ -1,0 +1,79 @@
+import { Cite, Callout, Quiz } from '@/components/mdx-exports';
+
+## Federalism
+
+The **Tenth Amendment** reserves to the states or the people powers not delegated to the federal government.
+
+The historical arc has been one of federal expansion — via the Commerce Clause (*Wickard v. Filburn*, 1942, was the high-water mark), the Civil War Amendments, the New Deal, the Civil Rights era, and the Spending Clause (Congress conditions federal funds on state policy compliance, e.g., the drinking age).
+
+Recent jurisprudence has trimmed at the edges: *U.S. v. Lopez* (1995), *NFIB v. Sebelius* (2012), *Dobbs* (2022) returning abortion regulation to the states. Whether this is a durable trend or a momentary correction is a live debate.
+
+### What the empirical literature finds on federalism
+
+Peer-reviewed political science on federalism since the 2010s has substantially complicated the classic *"laboratories of democracy"* thesis.
+
+<Cite id="garlick-2022" /> finds bottom-up diffusion in many issue areas — state legislative activity predicts subsequent congressional bill introductions, though often via messaging more than implementation. But <Cite id="tyler-gerken-2021" /> characterize "laboratories of democracy" as driven largely by third-party organizations and national networks, not autonomous state problem-solving. Recent work emphasizes partisan learning and growing inter-state divergence tied to party control rather than unbiased experimentation.
+
+### Race to the bottom, top, or middle?
+
+On race-to-the-bottom dynamics, the evidence is **mixed by domain**.
+
+<Cite id="volden-2002" /> found classic AFDC evidence that states did *not* relentlessly undercut each other on welfare benefits — they often wanted to raise benefits but waited for neighbors.
+
+But <Cite id="woods-2021" /> finds that adoption of *"No More Stringent"* laws restricting states from exceeding federal pollution standards is significantly driven by interstate economic competition, providing **direct evidence of environmental race-to-the-bottom pressures**.
+
+Some scholars argue many systems actually show a "race to the middle" — states cluster around similar, mediocre standards due to informational and political incentives. Formal models also show subnational competition can erode central enforcement and reduce overall welfare.
+
+### State-level variation drives major welfare differences
+
+State-level variation in health and welfare policies produces large differences in population health.
+
+<Cite id="montez-2019" /> find that higher minimum wages and state EITCs are linked to lower mortality, better birth outcomes, and reduced disability.
+
+<Cite id="bollyky-2023" /> find that during COVID-19, states with stronger health-care access, more protective mandates, higher vaccination, and higher social trust had substantially lower standardized infection and death rates — without clear losses in GDP or reading scores — though some educational trade-offs (math scores) and employment effects appear.
+
+Legal analyses of Medicaid and ACA implementation by <Cite id="gluck-huberfeld-2018" /> argue that heavy reliance on states produces large, durable inequalities in coverage and access.
+
+<Callout>
+  Federalism clearly fosters policy experimentation and diffusion, but learning is often partisan and network-driven rather than technocratic. In some domains — particularly environmental regulation and certain social protections — competitive pressures generate genuine race-to-the-bottom dynamics or at best a race to the middle. State-level variation produces large differences in welfare outcomes; decentralized authority can entrench unequal access to core benefits.
+</Callout>
+
+<Quiz
+  id="federalism"
+  title="Quick Check — Federalism"
+  questions={[
+    {
+      question: "How does the modern empirical literature complicate the 'laboratories of democracy' thesis?",
+      options: [
+        "It disproves the thesis entirely",
+        "It shows policy diffusion is real but often driven by partisan networks and outside organizations, not autonomous state problem-solving",
+        "It shows all states adopt identical policies",
+        "It shows the federal government dominates all policy areas"
+      ],
+      correctIndex: 1,
+      explanation: "Garlick (2022) does find bottom-up diffusion, but Tyler & Gerken (2021) and the Grumbach 'Laboratories Against Democracy' line of work characterize state-level innovation as driven largely by national third-party networks and partisan learning, not autonomous experimentation. The empirical picture is more partisan and less Brandeisian than the classic story."
+    },
+    {
+      question: "What does Woods (2021) find about environmental federalism specifically?",
+      options: [
+        "States compete to have the strictest pollution standards",
+        "Interstate economic competition is a significant driver of 'No More Stringent' laws restricting states from exceeding federal pollution standards — direct evidence of race-to-the-bottom dynamics",
+        "Pollution standards are entirely federally determined",
+        "Environmental policy shows no interstate effects"
+      ],
+      correctIndex: 1,
+      explanation: "Woods finds that economic competition between states is significantly associated with states adopting 'No More Stringent' laws — laws that prevent state regulators from setting pollution standards above the federal floor. This is direct evidence that the race-to-the-bottom dynamic, often theorized in environmental federalism, is empirically operating in at least this domain."
+    },
+    {
+      question: "What does Bollyky et al. (2023) find about state COVID-19 responses?",
+      options: [
+        "Stricter mandates always hurt GDP",
+        "States with stronger healthcare access, protective mandates, higher vaccination, and higher social trust had substantially lower standardized infection and death rates without clear GDP or reading-score losses",
+        "There was no variation across states",
+        "All state policies converged on the same outcomes"
+      ],
+      correctIndex: 1,
+      explanation: "Bollyky and colleagues in The Lancet analyzed state-level COVID outcomes and found that protective policies and social-trust environments substantially reduced infections and deaths without clear losses in GDP or reading scores. Some educational and employment trade-offs appeared (notably math scores and certain employment effects), but the dominant story was that state policy choices mattered — and the variation was large."
+    },
+  ]}
+/>
