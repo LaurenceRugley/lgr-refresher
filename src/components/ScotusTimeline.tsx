@@ -71,10 +71,11 @@ export function ScotusTimeline() {
         </div>
       </div>
 
-      {/* Timeline */}
-      <div className="relative px-6 py-12" style={{ minHeight: 360 }}>
-        {/* Axis */}
-        <div className="absolute left-6 right-6 top-1/2 h-[2px] bg-ink" style={{ transform: 'translateY(-1px)' }} />
+      {/* Timeline — horizontally scrollable on narrow viewports */}
+      <div className="overflow-x-auto no-scrollbar">
+        <div className="relative px-6 py-12" style={{ minHeight: 360, minWidth: 720 }}>
+          {/* Axis */}
+          <div className="absolute left-6 right-6 top-1/2 h-[2px] bg-ink" style={{ transform: 'translateY(-1px)' }} />
 
         {/* Decade marks */}
         {[1800, 1850, 1900, 1950, 2000].map((decade) => (
@@ -138,7 +139,8 @@ export function ScotusTimeline() {
               </motion.button>
             );
           })}
-        </AnimatePresence>
+          </AnimatePresence>
+        </div>
       </div>
 
       {/* Case detail modal */}

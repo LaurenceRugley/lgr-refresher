@@ -24,19 +24,19 @@ export function Home() {
           </p>
           <h1
             className="serif text-ink leading-[0.95] mb-3"
-            style={{ fontSize: 'clamp(3.5rem, 11vw, 6rem)' }}
+            style={{ fontSize: 'clamp(2.5rem, 13vw, 6rem)' }}
           >
             Political
           </h1>
           <h1
             className="serif italic text-ink leading-[0.95] mb-2"
-            style={{ fontSize: 'clamp(3.5rem, 11vw, 6rem)' }}
+            style={{ fontSize: 'clamp(2.5rem, 13vw, 6rem)' }}
           >
             Economy
           </h1>
           <h1
             className="serif text-ink leading-[0.95] mb-8"
-            style={{ fontSize: 'clamp(3.5rem, 11vw, 6rem)' }}
+            style={{ fontSize: 'clamp(2.5rem, 13vw, 6rem)' }}
           >
             <span className="italic text-gold/80 mr-2">&amp;</span>
             American Govt.
@@ -209,11 +209,11 @@ function PartCard({
         <p className="sans text-xs uppercase tracking-[0.25em] text-ink/70 mb-2">{subtitle}</p>
         <h3 className="serif text-display-md text-ink mb-3 leading-tight">{title}</h3>
         <p className="prose-lgr !text-body !mb-5">{description}</p>
-        <div className="flex items-center justify-between">
-          <p className="arrow-link sans text-sm uppercase tracking-[0.2em] text-ink font-medium">
+        <div className="flex items-center justify-between gap-3 flex-wrap">
+          <p className="arrow-link sans text-sm uppercase tracking-[0.15em] text-ink font-medium">
             Read this part <span className="arrow">→</span>
           </p>
-          <p className="sans text-xs uppercase tracking-wider text-gold">
+          <p className="sans text-[10px] uppercase tracking-[0.15em] text-gold whitespace-nowrap">
             {sectionCount} sections
           </p>
         </div>

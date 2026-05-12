@@ -15,11 +15,11 @@ export default {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
       fontSize: {
-        // Editorial scale, larger than default to feel like long-form
-        'display-xl': ['5rem', { lineHeight: '1.05', letterSpacing: '-0.02em' }],
-        'display-lg': ['3.75rem', { lineHeight: '1.1', letterSpacing: '-0.015em' }],
-        'display-md': ['2.5rem', { lineHeight: '1.15', letterSpacing: '-0.01em' }],
-        'display-sm': ['1.875rem', { lineHeight: '1.2' }],
+        // Editorial scale — fluid clamp() so narrow viewports never clip
+        'display-xl': ['clamp(2rem, 9vw, 5rem)', { lineHeight: '1.05', letterSpacing: '-0.02em' }],
+        'display-lg': ['clamp(1.875rem, 7vw, 3.75rem)', { lineHeight: '1.1', letterSpacing: '-0.015em' }],
+        'display-md': ['clamp(1.75rem, 5.5vw, 2.5rem)', { lineHeight: '1.15', letterSpacing: '-0.01em' }],
+        'display-sm': ['clamp(1.375rem, 4vw, 1.875rem)', { lineHeight: '1.2' }],
         'body-lg': ['1.125rem', { lineHeight: '1.7' }],
         'body': ['1rem', { lineHeight: '1.65' }],
         'body-sm': ['0.9rem', { lineHeight: '1.55' }],

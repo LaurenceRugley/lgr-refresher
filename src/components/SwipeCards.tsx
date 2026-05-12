@@ -99,7 +99,7 @@ export function SwipeCards({
               className={`flex-none snap-center bg-gradient-to-br ${toneBg[tone]} ${toneText[tone]} rounded-2xl p-7 shadow-[0_8px_30px_-12px_rgba(42,34,24,0.18)] border border-gold-light/40`}
               style={{
                 width: 'min(85vw, 22rem)',
-                aspectRatio: '5 / 6',
+                minHeight: '24rem',
               }}
             >
               <div className="flex flex-col h-full">
