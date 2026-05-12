@@ -1,0 +1,89 @@
+import { Cite, Callout, PullQuote, Quiz, ScotusTimeline } from '@/components/mdx-exports';
+
+<p className="sans text-sm uppercase tracking-widest text-gold mb-2">Part I</p>
+
+# Political Economy
+
+Capitalism, socialism, and communism are not three points on a single line. They are three answers to a cluster of questions about ownership of the means of production, coordination of economic activity, distribution of surplus, and the role of the state. Treating them as a left-right spectrum loses most of what is actually being argued about.
+
+## Capitalism
+
+**Core definition:** a mode of production in which the means of production are predominantly privately owned, labor is sold for wages on a market, and output is distributed primarily through price signals. Capital accumulation — reinvesting profit to expand productive capacity — is the engine.
+
+### Intellectual lineage
+
+**Adam Smith** — *The Wealth of Nations* (1776). The "invisible hand," division of labor (the famous pin factory), the case for free trade. Often caricatured; Smith was also the author of *The Theory of Moral Sentiments* and was deeply concerned with moral constraints on markets.
+
+**David Ricardo** — comparative advantage (1817), the theoretical foundation for trade.
+
+**Friedrich Hayek** — *The Road to Serfdom* (1944), the knowledge problem ("The Use of Knowledge in Society," 1945). Hayek's key argument: prices are information signals aggregating dispersed knowledge no central planner can possess.
+
+**Milton Friedman** — monetarism, *Capitalism and Freedom* (1962). Pushed the case that economic freedom is a precondition for political freedom.
+
+**Joseph Schumpeter** — "creative destruction": capitalism's defining feature is not equilibrium but the constant churn of innovation displacing incumbents.
+
+<PullQuote attribution="Friedrich Hayek, 1945">
+  The peculiar character of the problem of a rational economic order is determined precisely by the fact that the knowledge of the circumstances of which we must make use never exists in concentrated or integrated form.
+</PullQuote>
+
+### What the empirical literature finds on economic freedom
+
+Cross-country panel studies since 2015 generally find that higher levels of economic freedom are associated with faster GDP growth, particularly through the channels of property rights, business and trade freedom, investment freedom, and financial freedom <Cite id="ahmed-2023" />. Monetary freedom shows weak or insignificant effects in much of this work.
+
+On inequality, results are mixed and method-sensitive. A large quantitative summary by <Cite id="lawson-2024" /> finds that economic freedom levels are largely unrelated to inequality, though *increases* may correlate with higher inequality. <Cite id="callais-young-2023" /> find higher freedom modestly raises inequality, particularly via gains at the top decile, but all income groups gain — a "rising tide" pattern. For OECD countries, <Cite id="graafland-lous-2018" /> find that fiscal freedom, free trade, and low regulation raise net income inequality while sound money reduces it.
+
+The most important methodological caution is that index construction matters. <Cite id="ott-2016" /> shows that removing the "size of government" items actually *strengthens* the correlation between economic freedom and happiness — suggesting that government spending and transfers may positively correlate with institutional quality.
+
+<Callout>
+  The relationship between economic freedom and self-reported well-being is generally positive (<Cite id="nikolaev-bennett-2019" />), but causal claims from these indices should be made with care. Measurement decisions — around government size, weighting, and aggregation — substantially affect index values and their correlations with outcomes.
+</Callout>
+
+---
+
+<Quiz
+  id="capitalism-intro"
+  title="Quick Check — Capitalism"
+  questions={[
+    {
+      question: "What does Hayek's 'knowledge problem' argue?",
+      options: [
+        "Workers cannot know the true value of their labor",
+        "Markets aggregate dispersed knowledge that no central planner can access",
+        "Information asymmetry causes market failure",
+        "Knowledge is a public good and should be subsidized"
+      ],
+      correctIndex: 1,
+      explanation: "Hayek's 1945 essay 'The Use of Knowledge in Society' argues that economically relevant knowledge is dispersed across millions of actors — tacit, local, time-and-place specific — and that prices are the mechanism that aggregates it. This is distinct from information asymmetry (which is about who knows what they can know)."
+    },
+    {
+      question: "What does the empirical literature post-2015 find about economic freedom and inequality?",
+      options: [
+        "Higher freedom consistently reduces inequality",
+        "Higher freedom consistently raises inequality",
+        "Results are mixed and method-sensitive; index construction matters",
+        "The two are unrelated"
+      ],
+      correctIndex: 2,
+      explanation: "Lawson et al. (2024) find levels of freedom largely unrelated to inequality but increases may correlate with higher inequality; Callais & Young find modest increases via gains at the top decile in a 'rising tide' pattern. Ott (2016) showed that including 'size of government' as a negative freedom indicator distorts the relationship. The honest answer is: results are mixed and depend heavily on methodology."
+    },
+    {
+      question: "Schumpeter's 'creative destruction' refers to:",
+      options: [
+        "The destruction of working-class livelihoods by automation",
+        "The constant churn of innovation displacing incumbent firms",
+        "The boom-bust cycle in capitalist economies",
+        "The intentional destruction of value during recessions"
+      ],
+      correctIndex: 1,
+      explanation: "Schumpeter argued capitalism's defining feature is not equilibrium but the constant churn of innovation displacing incumbents. New technologies, business models, and firms continuously make old ones obsolete — which generates growth but also significant disruption."
+    },
+  ]}
+/>
+
+## A note on what's coming
+
+In the sections below we'll work through the Varieties of Capitalism framework (and how it's been complicated since 2001), Keynes and macroeconomic management, the socialist calculation debate (and what modern computation has done to it), and the 21st-century Marxist revival. Each section ends with a quick check.
+
+The companion **Part II** covers the American government — Articles I/II/III, the 2024 administrative-law revolution, federalism, elections. The SCOTUS browser is below as a preview of how it'll be referenced throughout.
+
+<ScotusTimeline />
