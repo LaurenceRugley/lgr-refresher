@@ -291,3 +291,41 @@ body {
   color: rgb(var(--gold));
   font-weight: 600;
 }
+
+/* ============================================================
+   Microinteractions
+   ============================================================ */
+.arrow-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: gap 0.2s ease;
+}
+.arrow-link:hover { gap: 0.7rem; }
+.arrow-link .arrow { transition: transform 0.2s ease; }
+.arrow-link:hover .arrow { transform: translateX(2px); }
+
+.card-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.card-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -12px rgb(var(--ink) / 0.22);
+  border-color: rgb(var(--gold));
+}
+
+/* Section ornament */
+.dot-rule::before,
+.dot-rule::after {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  width: 2.5rem;
+  background: rgb(var(--gold-light));
+  vertical-align: middle;
+  margin: 0 0.75rem;
+}
+
+/* Smooth hide scrollbars on swipe rails */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
