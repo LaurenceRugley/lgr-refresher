@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: '#2A2218',
-        gold: '#B89968',
-        'gold-light': '#D4BC93',
-        limestone: '#FAF7F2',
-        'limestone-dark': '#EFE9DE',
+        ink: 'rgb(var(--ink) / <alpha-value>)',
+        gold: 'rgb(var(--gold) / <alpha-value>)',
+        'gold-light': 'rgb(var(--gold-light) / <alpha-value>)',
+        limestone: 'rgb(var(--limestone) / <alpha-value>)',
+        'limestone-dark': 'rgb(var(--limestone-dark) / <alpha-value>)',
       },
       fontFamily: {
         serif: ['"Cormorant Garamond"', 'Cormorant', 'Garamond', 'Georgia', 'serif'],
