@@ -1,0 +1,79 @@
+import { Cite, Callout, PullQuote, Quiz } from '@/components/mdx-exports';
+
+## Socialism
+
+**Core definition:** social ownership of the means of production. The crucial ambiguity is in *"social"* — which can mean state, worker cooperative, municipal, or commons. This is why "socialism" is the most semantically overloaded word in political economy.
+
+### The major strands
+
+**Marxist / Scientific Socialism** — Marx and Engels treat socialism as a transitional phase after the proletarian seizure of state power, on the way to communism. State ownership, central planning, dictatorship of the proletariat.
+
+**Utopian Socialism** — Saint-Simon, Fourier, Owen. Pre-Marx; envisioned planned communities and voluntary cooperation. Marx dismissed them precisely because they lacked a theory of class conflict and historical materialism.
+
+**Democratic Socialism** — achievement of socialism through electoral means within liberal democracy. Eduard Bernstein's *Evolutionary Socialism* (1899) is the canonical revisionist text; he argued Marx's predictions of intensifying immiseration were not materializing and that reform could substitute for revolution.
+
+**Social Democracy** — the post-WWII Western European model. Functionally: regulated capitalism plus robust welfare state plus strong unions plus tripartite (state-labor-capital) bargaining. *Not* public ownership of the commanding heights in the contemporary form. The Nordic countries are social democracies, not socialist economies in the Marxist sense — they rank high on indices of economic freedom precisely because their markets are largely free; redistribution happens through tax-and-transfer.
+
+**Market Socialism** — Oskar Lange (1930s), more recently John Roemer. Social ownership of capital combined with market allocation of goods. Yugoslavia's self-managed firms were the largest historical experiment; modern Chinese state capitalism arguably has elements.
+
+**Libertarian Socialism / Anarcho-syndicalism** — Kropotkin, Bakunin, later Chomsky. Anti-state and anti-capitalist. Worker control without state ownership.
+
+Polanyi's analysis of disembedded markets plays a foundational role in much contemporary democratic-socialist thought — particularly in arguments for *re-embedding* markets in social control through universal services and decommodification.
+
+### The Socialist Calculation Debate — and what modern computation has done to it
+
+Mises (1920) and Hayek (1935) argued that without market prices for capital goods, rational economic calculation under socialism is impossible — planners cannot know relative scarcities. Lange and Lerner replied with the "Lange model": a planning board could simulate market prices via trial and error. Hayek's counter was epistemological — even a perfect computational solution misses that the relevant knowledge (tacit, local, time-and-place specific) cannot be aggregated to a planner. The collapse of Eastern Bloc planning was widely read as empirical vindication of the Austrian side.
+
+The debate has been substantially revived since the 2010s by advances in computing, big data, and machine learning. Modern empirical and theoretical work has, however, not produced a settled verdict. The literature now splits between renewed Austrian impossibility claims and technosocialist feasibility claims.
+
+<PullQuote attribution="Hayek, 1945">
+  The peculiar character of the problem of a rational economic order is determined precisely by the fact that the knowledge of the circumstances of which we must make use never exists in concentrated or integrated form.
+</PullQuote>
+
+On the Austrian side, <Cite id="boettke-candela-2023" /> and <Cite id="nguyen-2024" /> argue that big data and AI do not overcome the Mises-Hayek calculation/knowledge problems — the core issue is institutional and epistemic (property, dispersed tacit knowledge, entrepreneurial discovery), not raw computation. Complexity-theoretic and information-theoretic arguments claim that central planning faces non-computability, self-reference, and reflexivity that make "cyber-communism" unrealistic. Nguyen uses Gödel's incompleteness theorems to argue computational impossibility even with perfect data.
+
+On the technosocialist side, Cottrell and Cockshott's classic 1993 article argued that with modern computing and efficient algorithms, labor-time calculation plus algorithms for consumer choice can make comprehensive planning technically feasible. More recently, <Cite id="dapprich-cockshott-2023" /> propose input-output planning with central data collection, feedback control, and machine-learning-based demand forecasting, explicitly dismissing Hayek's information argument. <Cite id="lopes-2021" /> argues that Lange-Lerner effectively solved Mises's technical challenge within neoclassical theory, leaving remaining objections as political/ideological rather than scientific.
+
+<Callout>
+  Modern computation has not produced an empirical verdict. Instead, it has sharpened both technosocialist claims that planning is technically feasible and Austrian / complexity claims that deep epistemic and computational limits remain. Big data and machine learning feature prominently in new models and simulations, but their ability to resolve the calculation problem at full-economy scale is still contested and largely theoretical rather than empirically demonstrated.
+</Callout>
+
+<Quiz
+  id="socialism-strands"
+  title="Quick Check — Socialism"
+  questions={[
+    {
+      question: "Why are Nordic countries not 'socialist' in the strict Marxist sense?",
+      options: [
+        "Their welfare states are too small",
+        "They retain private ownership of the means of production and rely on tax-and-transfer for redistribution",
+        "They have no labor unions",
+        "They use central planning rather than markets"
+      ],
+      correctIndex: 1,
+      explanation: "Nordic countries are social democracies, not socialist economies. They rank high on economic-freedom indices precisely because their markets are largely free. Redistribution happens through high taxes and generous transfers, not state ownership of the means of production — which is the defining feature of socialism in the Marxist sense."
+    },
+    {
+      question: "What was Hayek's epistemological response to the Lange model of market simulation?",
+      options: [
+        "The math doesn't work out under general equilibrium",
+        "Relevant economic knowledge is tacit and dispersed — it cannot be aggregated to a planner even in principle",
+        "Central planning requires too much computing power",
+        "Workers won't cooperate with planners"
+      ],
+      correctIndex: 1,
+      explanation: "Hayek's deepest argument wasn't about computation but about epistemology. Even if a planning board could compute equilibrium prices, the knowledge that markets actually use — local, tacit, time-and-place specific — cannot be made articulate enough to be sent to a planner. This is why modern AI does not, in his framework, dissolve the calculation problem."
+    },
+    {
+      question: "How does the modern (post-2010s) calculation debate stand?",
+      options: [
+        "Decisively settled in favor of markets",
+        "Decisively settled in favor of comprehensive planning",
+        "Sharpened on both sides — technosocialists argue planning is technically feasible; Austrians and complexity theorists argue deep epistemic limits remain",
+        "Considered obsolete by most economists"
+      ],
+      correctIndex: 2,
+      explanation: "Modern computation hasn't produced a verdict. Dapprich/Cockshott and Lopes argue planning is now technically feasible with machine learning and input-output methods. Boettke/Candela, Nguyen, and complexity theorists argue the core issue is institutional and epistemic — not raw computation. The debate is more sophisticated than ever, not settled."
+    },
+  ]}
+/>

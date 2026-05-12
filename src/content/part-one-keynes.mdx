@@ -1,0 +1,71 @@
+import { Cite, Callout, PullQuote, Quiz } from '@/components/mdx-exports';
+
+## Keynes & Macroeconomic Management
+
+John Maynard Keynes occupies a contested position in this taxonomy. He was not a socialist; he believed in private ownership of the means of production and in markets as the primary allocator of goods. But his *General Theory of Employment, Interest, and Money* (1936) argued that markets can settle at high-unemployment equilibria, that aggregate demand drives short-run output, and that active fiscal and monetary policy is therefore essential to maintain full employment. Keynes is best understood as an *interventionist within capitalism* — the architect of the mid-twentieth-century regulatory-welfare bargain rather than a critic of capitalism's foundations.
+
+### The post-war Keynesian consensus and its breakdown
+
+From roughly 1945 to the early 1970s, advanced economies operated under a Keynesian policy framework: counter-cyclical fiscal policy, fixed exchange rates under Bretton Woods, financial repression, and a tolerance for inflation in pursuit of full employment. The stagflation of the 1970s — simultaneous high inflation and high unemployment — broke the consensus. The monetarist response, led by Milton Friedman, argued that inflation was "always and everywhere a monetary phenomenon" and that central banks should target money-supply growth rather than activist demand management.
+
+The **New Keynesian synthesis** emerging in the 1990s combined Keynesian short-run aggregate-demand reasoning with monetarist long-run discipline: independent inflation-targeting central banks would handle stabilization, while fiscal policy would maintain debt sustainability. This was the operative consensus by 2007.
+
+<PullQuote attribution="The post-2008 consensus, summarized">
+  Monetary policy alone is no longer sufficient. With nominal rates at the zero lower bound, fiscal policy returns to the center.
+</PullQuote>
+
+### Post-2008 revival and the inflation episode of 2021–2023
+
+The Global Financial Crisis broke the assumption that monetary policy alone was sufficient. With nominal interest rates at the zero lower bound, fiscal policy returned to prominence. <Cite id="blanchard-2019" /> argued that when *r* is below *g* (the interest rate is below the growth rate), debt can remain stable with modest primary surpluses — making many advanced-economy debt paths look less alarming than the pre-crisis consensus had suggested. Larry Summers similarly emphasized secular-stagnation dynamics and argued for public investment when the economy is depressed.
+
+The inflation episode of 2021–2023 was awkward for every camp. For mainstream Keynesians, it showed that pandemic-era stimulus was too strong relative to supply constraints. For monetarists and fiscal-theory advocates, it reinforced the claim that large deficits, accommodative money, and delayed tightening produce persistent nominal overshoot. For Modern Monetary Theory advocates, the episode did not falsify the framework — inflation is the real constraint, not a financing constraint — but it did expose the difficulty of calibrating fiscal expansion in real time.
+
+### Modern Monetary Theory and its critics
+
+MMT, associated most prominently with <Cite id="kelton-2020" />, argues that sovereign currency issuers do not face a financing constraint like households or eurozone members: the binding limit on government spending is real capacity and inflation, not "running out of money." Taxes and bond sales are tools for managing inflation and reserves, not for funding spending. In MMT, fiscal policy should be the primary stabilization instrument, with monetary policy in a supporting role.
+
+<Cite id="cochrane-2023" /> and other fiscal-theory-of-the-price-level critics push the opposite emphasis: inflation is ultimately about fiscal backing and credibility. If investors doubt future primary surpluses, inflation or higher borrowing costs will do the adjustment. From this view, debt sustainability is forward-looking — credibility, not debt-to-GDP, is the relevant metric.
+
+<Callout>
+  The broadest current consensus is that no framework is sufficient on its own. Keynesianism best explains stabilization in slumps; monetarism and fiscal theory best explain nominal discipline and credibility; MMT best forces economists to distinguish financial from real constraints. The post-COVID synthesis is more pragmatic: use fiscal policy aggressively in downturns, recognize supply-side constraints and inflation risks earlier, and stop treating debt, money, and spending as interchangeable.
+</Callout>
+
+<Quiz
+  id="keynes-macro"
+  title="Quick Check — Keynes & Macro"
+  questions={[
+    {
+      question: "How is Keynes best classified relative to capitalism?",
+      options: [
+        "A socialist who advocated public ownership of the means of production",
+        "An interventionist within capitalism — markets plus active fiscal/monetary policy",
+        "A monetarist who argued for fixed money-supply growth rules",
+        "A classical liberal opposed to state intervention"
+      ],
+      correctIndex: 1,
+      explanation: "Keynes believed in private ownership and in markets as the primary allocator, but argued markets can settle at high-unemployment equilibria, requiring active stabilization policy. He's the architect of the mid-20th-century regulated-capitalism bargain — not a critic of capitalism's foundations."
+    },
+    {
+      question: "What does Blanchard's 'r < g' framework imply for advanced-economy debt?",
+      options: [
+        "Debt is always unsustainable when r is below g",
+        "Debt can remain stable with modest primary surpluses when the interest rate is below the growth rate",
+        "Government spending should be limited to tax revenue",
+        "Inflation will always erode debt to zero"
+      ],
+      correctIndex: 1,
+      explanation: "Blanchard's 2019 American Economic Association presidential address argued that when the real interest rate r is below the real growth rate g, debt can be rolled over with modest primary surpluses — making many advanced-economy debt paths less alarming than the pre-2008 consensus assumed. Critics like Cochrane respond that credibility, not the r/g identity, ultimately determines sustainability."
+    },
+    {
+      question: "What did the 2021–2023 inflation episode show, in the broadest possible reading?",
+      options: [
+        "Monetarism was vindicated and Keynesianism was falsified",
+        "MMT was falsified",
+        "No single framework is sufficient — each captures a different piece of the picture",
+        "Fiscal policy should never be used as a stabilization tool"
+      ],
+      correctIndex: 2,
+      explanation: "The episode was awkward for everyone. Mainstream Keynesians had to concede stimulus was too strong relative to supply constraints. Monetarists and fiscal-theorists got their concerns about delayed tightening reinforced. MMT advocates correctly noted inflation is the binding constraint — which the episode didn't falsify so much as illustrate. The honest takeaway is methodological pluralism."
+    },
+  ]}
+/>

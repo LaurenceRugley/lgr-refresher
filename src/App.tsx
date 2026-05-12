@@ -5,7 +5,7 @@ import { ReadingProgress } from '@/components/ReadingProgress';
 import { CitationProvider } from '@/components/CitationSystem';
 import { Home } from '@/pages/Home';
 import { PartOne } from '@/pages/PartOne';
-import { PartTwo, Glossary } from '@/pages/Stubs';
+import { PartTwo, Glossary, PrefacePage } from '@/pages/Stubs';
 import { ScotusPage } from '@/pages/ScotusPage';
 
 function ScrollToTop() {
@@ -25,6 +25,7 @@ export function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/preface" element={<PrefacePage />} />
           <Route path="/part-one" element={<PartOne />} />
           <Route path="/part-two" element={<PartTwo />} />
           <Route path="/scotus" element={<ScotusPage />} />

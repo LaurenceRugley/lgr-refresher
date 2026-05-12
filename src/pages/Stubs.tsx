@@ -1,3 +1,19 @@
+import { MDXProvider } from '@mdx-js/react';
+import { mdxComponents } from '@/components/mdxComponents';
+import Preface from '@/content/preface.mdx';
+
+export function PrefacePage() {
+  return (
+    <main className="max-w-prose mx-auto px-6 py-12">
+      <MDXProvider components={mdxComponents}>
+        <article className="prose-lgr">
+          <Preface />
+        </article>
+      </MDXProvider>
+    </main>
+  );
+}
+
 export function PartTwo() {
   return (
     <main className="max-w-prose mx-auto px-6 py-16">
